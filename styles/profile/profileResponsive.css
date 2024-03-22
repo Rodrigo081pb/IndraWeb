@@ -1,0 +1,22 @@
+@media screen and (min-width: 650px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .principal{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .principal{
+        height: 530px;
+    }
+    .counter__comunit{
+        width: 290px;
+    }
+    .counter__friend{
+        width: 290px;
+    }
+}

@@ -1,0 +1,23 @@
+:root{
+    background-color: #c2f5d3;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.font-green{
+    color: #45ff7dcb;
+}
+
+.font-indra-color-defaut{
+    color: #8050a0;
+}
+
+.indra-link{
+    text-decoration: none;
+    font-weight: 565;
+    color: black;
+}
+
+.indra-button-bg{
+    background-color: #45ff7dcb ;
+    cursor: pointer;
+}

@@ -17,4 +17,12 @@
     .field__remember{
         margin-bottom: 20px;
     }
+    .fields__create{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: -70px;
+    }
 }
+
