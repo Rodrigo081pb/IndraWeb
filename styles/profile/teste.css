@@ -1,0 +1,255 @@
+/* Estilos para o cabeçalho */
+.header.menu {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: auto !important;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.container :not(:first-child) {
+    margin-top: 15px;
+}
+
+/* Estilos para os elementos foto, principal, contador de amigos e contador de comunidade */
+.photo,
+.principal,
+.counter__friend,
+.counter__comunit {
+    width: 100%;
+    background-color: white;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.photo {
+    height: 500px;
+    border-top-right-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+}
+
+.photo__person > img {
+    border-radius: 150px;
+}
+
+/* Estilos para a seção de amigos */
+.friends {
+    margin-left: 5%;
+}
+
+.img__friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: -12px;
+}
+
+.img__friend img {
+    height: 64px;
+    width: 64px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.friend__icon {
+    border: 1px solid green;
+    width: 100px;
+    height: 50px;
+    margin-left: 85px;
+    text-align: center;
+    border-radius: 0 0 50% 50%;
+    background: linear-gradient(169deg, rgba(0, 98, 54, 1) 6%, rgba(51, 98, 96, 1) 41%, rgba(0, 115, 63, 1) 62%, rgba(48, 96, 81, 1) 88%);
+}
+
+.friend__icon > h1 {
+    color: white;
+}
+
+.friend__name {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilos para a seção de ferramentas da foto */
+.photo__tools > div > i {
+    margin-right: 15px;
+}
+
+.principal {
+    height: 800px;
+    max-width: 520px;
+}
+
+.photo__name > h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.counter__friend,
+.counter__comunit {
+    height: 350px;
+    width: 340px;
+}
+
+/* Estilos para o cabeçalho de navegação */
+header > nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+header > nav > #title > h1 {
+    font-size: 40px;
+}
+
+.menuH {
+    font-size: 30px;
+}
+
+.name__ref {
+    margin-bottom: -10px;
+}
+
+.name__ref > h1 {
+    margin-left: 10px;
+}
+
+/* Estilos para os ícones sociais */
+.social__icon {
+    border: 1px solid green;
+    width: 90px;
+    margin-left: 10px;
+    align-items: center;
+    display: flex;
+    margin-bottom: -15px;
+    border-radius: 50% 50% 0 0;
+    background: linear-gradient(169deg, rgba(0, 98, 54, 1) 6%, rgba(51, 98, 96, 1) 41%, rgba(0, 115, 63, 1) 62%, rgba(48, 96, 81, 1) 88%);
+}
+
+.social__icon > h1 {
+    margin-left: 10px;
+    color: white;
+}
+
+/* Estilos para a linha horizontal */
+hr {
+    border: none;
+    border-top: 1.5px solid rgb(4, 5, 4);
+}
+
+/* Estilos para os status */
+.status {
+    display: flex;
+    margin: 5px;
+    height: 300px;
+    align-items: center;
+}
+
+.sobre {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.status > .box__green > h1 {
+    color: white;
+    font-size: 17px;
+    margin: 1px 0px;
+    background-color: rgb(137, 206, 179);
+    transition: background-color 0.3s ease;
+}
+
+.status > .box__green:hover > h1 {
+    background-color: rgb(41, 182, 128);
+}
+
+/* Estilos para o contêiner de comunidade */
+.counter__comunit__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.comunit__img__item {
+    padding: 10px;
+}
+
+.comunit__img__item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 64px;
+}
+
+/* Estilos para mídia de tela menor */
+@media screen and (max-width: 650px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .principal {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .principal {
+        height: 530px;
+    }
+    
+    .counter__comunit,
+    .counter__friend {
+        width: 290px;
+    }
+}
+
+/* Estilos gerais */
+:root {
+    background-color: #c2f5d3;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.font-green {
+    color: #45ff7dcb;
+}
+
+.font-indra-color-defaut {
+    color: #8050a0;
+}
+
+.indra-link {
+    text-decoration: none;
+    font-weight: 565;
+    color: black;
+}
+
+.indra-button-bg {
+    background-color: #45ff7dcb;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -44,13 +44,14 @@ header.menu{
     border-radius: 150px;
 }
 
+
 .friends {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .img__friend {
     display: flex;
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; 
     margin-bottom: -10px;
 }
 
@@ -77,9 +78,8 @@ header.menu{
 
 .friend__name {
     margin-bottom: 15px;
-    text-align: center; /* Centraliza o nome do amigo */
+    text-align: center;
 }
-
 
 .photo__tools > div > i {
     margin-right: 15px;
@@ -94,6 +94,7 @@ header.menu{
     font-size: 30px;
     margin-bottom: 5px;
 }
+
 
 .counter__friend,
 .counter__comunit{
@@ -160,9 +161,15 @@ hr{
     color: white;
 }
 
+/* CSS para o estilo padrão */
 .status > .box__green > h1 {
     color: white;
     font-size: 17px;
     margin: 1px 0px;
     background-color: rgb(137, 206, 179);
+    transition: background-color 0.3s ease;
+}
+
+.status > .box__green:hover > h1 {
+    background-color: rgb(41, 182, 128);
 }
